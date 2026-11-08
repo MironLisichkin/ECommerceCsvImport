@@ -17,4 +17,3 @@
         public string ModelNumber { get; set; } = string.Empty;
     }
 }
-
