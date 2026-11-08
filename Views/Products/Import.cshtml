@@ -1,0 +1,67 @@
+﻿@model ECommerceCsvImport.Models.ImportViewModel
+
+@{
+    ViewData["Title"] = "Импорт товаров";
+}
+
+<h1>Импорт товаров из CSV</h1>
+
+<form method="post" asp-controller="Products" asp-action="Import">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mb-3">
+        <label for="filePath">Путь к CSV-файлу</label>
+        <input type="text" id="filePath" name="filePath" value="@Model.FilePath" class="form-control" placeholder="/csv/sample_products.csv" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Импортировать товары</button>
+</form>
+
+@if (Model.Result != null)
+{
+    <h2 class="mt-4">Результат импорта</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Показатель</th>
+                <th>Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Всего строк</td>
+                <td>@Model.Result.TotalRows</td>
+            </tr>
+            <tr>
+                <td>Успешно импортировано</td>
+                <td>@Model.Result.ImportedCount</td>
+            </tr>
+            <tr>
+                <td>Ошибки</td>
+                <td>@Model.Result.ErrorCount</td>
+            </tr>
+        </tbody>
+    </table>
+
+    @if (Model.Result.Errors.Count > 0)
+    {
+        <h3>Список ошибок</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Строка</th>
+                    <th>Описание ошибки</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var error in Model.Result.Errors)
+                {
+                    <tr>
+                        <td>@error.RowNumber</td>
+                        <td>@error.Message</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
