@@ -1,0 +1,12 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+1001,Ноутбук Lenovo IdeaPad 3,Бюджетный ноутбук для работы и учебы,45990,RUB,Компьютеры,5,/images/laptop.jpg,true,Lenovo,24,IdeaPad 3-15
+1002,Мышь Logitech M185,Беспроводная мышь с USB-приемником,1290,RUB,Периферия,10,/images/mouse.jpg,true,Logitech,12,M185
+1003,Клавиатура A4Tech Bloody V3M,Механическая игровая клавиатура,3490,RUB,Периферия,7,/images/keyboard.jpg,false,A4Tech,24,V3M
+1004,Монитор Dell S27220C,Игровой монитор 27 дюймов,29990,RUB,Компьютеры,3,/images/monitor.jpg,true,Dell,24,S27220C
+1005,Видеокарта NVIDIA GeForce RTX 3060,Графическая карта для игр и работы,24990,RUB,Компьютеры,4,/images/gpu.jpg,true,NVIDIA,36,RTX3060
+1006,Накопитель SSD Samsung 870 EVO 1TB,Внутренний твердотельный накопитель,5990,RUB,Компьютеры,12,/images/ssd.jpg,true,Samsung,60,870EVO-1T
+1007,Webcam Logitech C920,Веб-камера Full HD,4990,RUB,Периферия,6,/images/webcam.jpg,true,Logitech,24,C920
+1008,Аудиоинтерфейс Focusrite Scarlett 2i2,Для записи звука и подкастов,15990,RUB,Звук,2,/images/audio.jpg,false,Focusrite,60,Scarlett2i2
+1009,Роутер TP-Link Archer AX55,Беспроводной роутер Wi-Fi 6,7490,RUB,Сетевое оборудование,8,/images/router.jpg,true,TP-Link,36,AX55
+1010,Игровая гарнитура HyperX Cloud Stinger,Наушники с микрофоном,3290,RUB,Периферия,15,/images/headset.jpg,true,HyperX,12,CloudStinger
+1011,Блок питания Corsair CV550,,4990,RUB,Компьютеры,9,,true,Corsair,60,CV550
